@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Proper Pressure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>PROPER PRESSURE</h1>
+  <p>Loud or Lying — review system</p>
+</header>
+
+<nav>
+  <button onclick="render('all')">All</button>
+  <button onclick="render('gas')">Gas</button>
+  <button onclick="render('mid')">Mid</button>
+  <button onclick="render('overhyped')">Overhyped</button>
+
+  <input id="searchInput" type="text" placeholder="Search reviews..." oninput="searchReviews()" />
+</nav>
+
+<div class="section">
+
+  <h2>🔥 Featured Pressure</h2>
+  <div id="featured-container"></div>
+
+  <h2>🧪 Latest Reviews</h2>
+  <div id="reviews-container"></div>
+
+</div>
+
+<script src="data/reviews.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
